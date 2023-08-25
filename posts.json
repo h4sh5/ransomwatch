@@ -36278,5 +36278,10 @@
         "post_title": "SMS-SME was hacked. A huge amount of confidential information was stolen, information of c",
         "group_name": "alphv",
         "discovered": "2023-08-25 06:34:35.326809"
+    },
+    {
+        "post_title": "FA Foundry",
+        "group_name": "8base",
+        "discovered": "2023-08-25 07:29:52.796651"
     }
 ]
