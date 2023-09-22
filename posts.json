@@ -37878,5 +37878,10 @@
         "post_title": "SAGAM Groupe - a company with dozens of vulnerabilities in its network has been hacked and",
         "group_name": "alphv",
         "discovered": "2023-09-22 20:29:56.180760"
+    },
+    {
+        "post_title": "Hospice of Huntington",
+        "group_name": "karakurt",
+        "discovered": "2023-09-22 21:31:44.267249"
     }
 ]
