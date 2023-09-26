@@ -11,3 +11,188 @@
 <body>
 <div class="wrapper">
     
+<div id="UUID" class="mainModal">
+    <div class="modalUUID">
+        <a href="" title="Close" class="close">X</a>
+        <h2>ENTER UUID</h2>
+        <p>
+            To contact us, you must enter your personal UUID in the field below and press ENTER.
+            After logging in, you will receive detailed information about your company.
+        </p>
+        <form action="" method="post">
+            <input
+                    class="uuid-input"
+                    name="uuid"
+                    type="text"
+                    minlength="20"
+                    required
+                    placeholder="XXXX-XXXX-XXXX-XXXX"
+            />
+            <input type="hidden" name="uuid_redirect">
+            <input type="submit" value="ENTER" />
+        </form>
+        <p class="gotofb">
+            If you do not have UUID, please contact via the
+            <a href="#feedback">feedback</a> form
+        </p>
+    </div>
+</div>
+<div id="feedback" class="mainModal">
+    <div class="modalFeedback">
+        <a href="#close" title="Закрыть" class="close">X</a>
+        <h2>Feedback</h2>
+        <p>
+            If you are the owner of the company you can leave your contact details and you will be provided with a UUID to enter the chat. If you are a media outlet, leave your contacts and we will contact you very soon.
+        </p>
+        <form action="" method="post">
+            <input
+                    name="feedback-name"
+                    required
+                    autocomplete="on"
+                    id="1"
+                    type="text"
+                    placeholder="Your name"
+            />
+            <input
+                    id="2"
+                    required
+                    name="feedback-contacts"
+                    autocomplete="on"
+                    type="email"
+                    placeholder="Your email"
+            />
+            <textarea
+                    name="feedback-message"
+                    required
+                    id="3"
+                    cols="30"
+                    rows="4"
+                    minlength="20"
+                    placeholder="Your message"
+            ></textarea>
+            <img src="data:image/jpeg;base64,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" alt="Enable images to see captcha" width="200" height="60"/>
+            <input
+                    name="captcha"
+                    required
+                    id="captcha"
+                    type="text"
+                    placeholder="Complete captcha"
+            />
+            <input type="hidden" name="gc_value" value="$2y$10$eNQIJN8FDEBqsgRkRqg2jeLlsWFHUYBk3FmNS9IYXfhr./2gQdq.6">
+            <input type="hidden" name="feedback_form">
+            <input type="submit" value="SEND" />
+        </form>
+    </div>
+</div>
+<div id="public_notice" class="mainModal">
+    <div class="modalNotice">
+        <a href="" title="Close" class="close">X</a>
+        
+        <h2>Public notice</h2>
+        <p>
+            — I ain't fucking buying that.
+        </p>
+		<p>
+            — That's handy because I ain't fucking selling it. It's a fact.
+        </p>
+		<p>
+            by Guy Ritchie
+        </p>
+        <br>
+        <p>
+            1. Snatch is a leakage data base open for public use.
+        </p>
+        <p>
+            2. Snatch does not assume any responsibility for the information and the methods of its acquisition.
+        </p>
+        <p>
+            3. Snatch is ready to cooperate with any groups and companies that provide exclusive information for its further publication. The information source should in that case refuse to carry any responsibility for this information.
+        </p>
+        <p>
+            4. Snatch is ready to publish information of any content and confidential level ignoring all the possible consequences.
+        </p>
+        <p>
+            5. All responsibility for the publications lies upon the persons who made the information leakage possible from the sources they have been entrusted with.
+        </p>
+        <p>
+            6. Snatch publishes personal data and contacts of the personalities who are responsible for  data leakage and made it possible.
+        </p>
+        <p>
+            7. All the information and data published on our resource is of public use and can be shared with similar resources – but the right of the first publication always belongs to the Snatch team.
+        </p>
+        <p>
+            8. Snatch is open to the collaboration with any media to make data leakage situations shared and visible to wide range of people.
+        </p>
+        <p>
+            9. Snatch is always open for a dialogue with the owners of the data and is willing to solve the situation. One can always contact us within the confidential chat room or with the help of feedback form.
+        </p>
+        <p>
+            10. All negotiations are possible only with the means of our chat platform and are kept absolutely confidential.
+        </p>
+        <p>
+            11. Snatch does not assume any responsibility for the data publication consequences and confidential data usage. All the responsibility lies upon those who made the data leakage possible.
+        </p>    </div>
+</div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="header-content">
+                <div class="header-start">
+                    <a href="#UUID">
+                        <span>Enter UUID</span>
+                    </a>
+                    <a href="#feedback">
+                        <span>Feedback</span>
+                    </a>
+                    <a href="#public_notice">
+                        <span>Public notice</span>
+                    </a>
+                </div>
+                <div class="header-end">
+                    <div class="header-socials">
+                        <a href="https://t.me/snatch_team">
+                            <img src="../assets/images/telegram.svg" alt="telegram" />
+                        </a>
+                    </div>
+                    <div class="header-buttons">
+                        <button class="b_tor" onclick="window.location.href='http://hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad.onion/';">TOR</button>
+                        <button class="b_web" onclick="window.location.href='https://snatchnews.top/';">WEB</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>    <main>
+        <div class="container">
+            <div class="row">
+                <div class="sub-header">
+                    <div class="sh-start">
+                        <a href="index.php"><img src="./assets/images/logo.png" alt="Logo" /></a>
+                    </div>
+                    <div class="sh-midle">
+                        <nav class="sh-midle-nav">
+                            <ul>
+                                <li class="sh-m-l"><a href="index.php?filter=new">New company</a></li><li class="sh-m-l"><a href="index.php?filter=full">Full data</a></li><li class="sh-m-l"><a href="index.php?filter=archive">Archive</a></li>                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sh-end">
+                        <form class="news-search" method="post">
+                            <input
+                                    class="news-search_input"
+                                    type="text"
+                                    placeholder="Search for company..."
+                                    name="search"
+                            />
+                            <button class="news-search_button" type="submit">
+                                <img src="./assets/images/n-search.svg" alt="" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div id="information_block">
+                    <div class="two-col-grid">
+                        <div class="grid-item">
+                            <div id='info_block'><p><p><strong>Insurance companies, attention please!</strong></p><p></p><ul><li>In case you see your client in this list, please contact us. You will get a full access gaining report of the company. This will will totally convince you that the poor judgment of the IT department leads to an insured event. Since many companies have turned attacks on them into a profitable insurance business, we are starting to publish reports on breaches in the security systems of those who are mentioned at our blog.</li></ul></p></div>                        </div>
+                        <div class="grid-item">
+                            <div id="info_block">
+                                
