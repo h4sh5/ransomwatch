@@ -17,3 +17,81 @@
 <body>
 <div class="wrapper">
     
+<div id="UUID" class="mainModal">
+    <div class="modalUUID">
+        <a href="" title="Close" class="close">X</a>
+        <h2>ENTER UUID</h2>
+        <p>
+            To contact us, you must enter your personal UUID in the field below and press ENTER.
+            After logging in, you will receive detailed information about your company.
+        </p>
+        <form action="" method="post">
+            <input
+                    class="uuid-input"
+                    name="uuid"
+                    type="text"
+                    minlength="20"
+                    required
+                    placeholder="XXXX-XXXX-XXXX-XXXX"
+            />
+            <input type="hidden" name="uuid_redirect">
+            <input type="submit" value="ENTER" />
+        </form>
+        <p class="gotofb">
+            If you do not have UUID, please contact via the
+            <a href="#feedback">feedback</a> form
+        </p>
+    </div>
+</div>
+<div id="feedback" class="mainModal">
+    <div class="modalFeedback">
+        <a href="#close" title="Закрыть" class="close">X</a>
+        <h2>Feedback</h2>
+        <p>
+            If you are the owner of the company you can leave your contact details and you will be provided with a UUID to enter the chat. If you are a media outlet, leave your contacts and we will contact you very soon.
+        </p>
+        <form action="" method="post">
+            <input
+                    name="feedback-name"
+                    required
+                    autocomplete="on"
+                    id="1"
+                    type="text"
+                    placeholder="Your name"
+            />
+            <input
+                    id="2"
+                    required
+                    name="feedback-contacts"
+                    autocomplete="on"
+                    type="email"
+                    placeholder="Your email"
+            />
+            <textarea
+                    name="feedback-message"
+                    required
+                    id="3"
+                    cols="30"
+                    rows="4"
+                    minlength="20"
+                    placeholder="Your message"
+            ></textarea>
+            <img src="data:image/jpeg;base64,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" alt="Enable images to see captcha" width="200" height="60"/>
+            <input
+                    name="captcha"
+                    required
+                    id="captcha"
+                    type="text"
+                    placeholder="Complete captcha"
+            />
+            <input type="hidden" name="gc_value" value="$2y$10$YJICwei4qbuGByh8hBnwq.ALVhZXcQRzAFJ2NX7DpTUS.UAVt.iL2">
+            <input type="hidden" name="feedback_form">
+            <input type="submit" value="SEND" />
+        </form>
+    </div>
+</div>
+<div id="public_notice" class="mainModal">
+    <div class="modalNotice">
+        <a href="" title="Close" class="close">X</a>
+        
+        
