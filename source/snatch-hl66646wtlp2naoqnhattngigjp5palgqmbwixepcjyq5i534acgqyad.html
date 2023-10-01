@@ -17,3 +17,141 @@
 <body>
 <div class="wrapper">
     
+<div id="UUID" class="mainModal">
+    <div class="modalUUID">
+        <a href="" title="Close" class="close">X</a>
+        <h2>ENTER UUID</h2>
+        <p>
+            To contact us, you must enter your personal UUID in the field below and press ENTER.
+            After logging in, you will receive detailed information about your company.
+        </p>
+        <form action="" method="post">
+            <input
+                    class="uuid-input"
+                    name="uuid"
+                    type="text"
+                    minlength="20"
+                    required
+                    placeholder="XXXX-XXXX-XXXX-XXXX"
+            />
+            <input type="hidden" name="uuid_redirect">
+            <input type="submit" value="ENTER" />
+        </form>
+        <p class="gotofb">
+            If you do not have UUID, please contact via the
+            <a href="#feedback">feedback</a> form
+        </p>
+    </div>
+</div>
+<div id="feedback" class="mainModal">
+    <div class="modalFeedback">
+        <a href="#close" title="Закрыть" class="close">X</a>
+        <h2>Feedback</h2>
+        <p>
+            If you are the owner of the company you can leave your contact details and you will be provided with a UUID to enter the chat. If you are a media outlet, leave your contacts and we will contact you very soon.
+        </p>
+        <form action="" method="post">
+            <input
+                    name="feedback-name"
+                    required
+                    autocomplete="on"
+                    id="1"
+                    type="text"
+                    placeholder="Your name"
+            />
+            <input
+                    id="2"
+                    required
+                    name="feedback-contacts"
+                    autocomplete="on"
+                    type="email"
+                    placeholder="Your email"
+            />
+            <textarea
+                    name="feedback-message"
+                    required
+                    id="3"
+                    cols="30"
+                    rows="4"
+                    minlength="20"
+                    placeholder="Your message"
+            ></textarea>
+            <img src="data:image/jpeg;base64,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" alt="Enable images to see captcha" width="200" height="60"/>
+            <input
+                    name="captcha"
+                    required
+                    id="captcha"
+                    type="text"
+                    placeholder="Complete captcha"
+            />
+            <input type="hidden" name="gc_value" value="$2y$10$C57Sy3LrG3JsWHBIO.GOouOywPvPWoPx7Hjol54UPGc5NUsTTYX1O">
+            <input type="hidden" name="feedback_form">
+            <input type="submit" value="SEND" />
+        </form>
+    </div>
+</div>
+<div id="public_notice" class="mainModal">
+    <div class="modalNotice">
+        <a href="" title="Close" class="close">X</a>
+        
+        <h2>Public notice</h2>
+        <p>
+            — I ain't fucking buying that.
+        </p>
+		<p>
+            — That's handy because I ain't fucking selling it. It's a fact.
+        </p>
+		<p>
+            by Guy Ritchie
+        </p>
+        <br>
+        <p>
+            1. Snatch is a leakage data base open for public use.
+        </p>
+        <p>
+            2. Snatch does not assume any responsibility for the information and the methods of its acquisition.
+        </p>
+        <p>
+            3. Snatch is ready to cooperate with any groups and companies that provide exclusive information for its further publication. The information source should in that case refuse to carry any responsibility for this information.
+        </p>
+        <p>
+            4. Snatch is ready to publish information of any content and confidential level ignoring all the possible consequences.
+        </p>
+        <p>
+            5. All responsibility for the publications lies upon the persons who made the information leakage possible from the sources they have been entrusted with.
+        </p>
+        <p>
+            6. Snatch publishes personal data and contacts of the personalities who are responsible for  data leakage and made it possible.
+        </p>
+        <p>
+            7. All the information and data published on our resource is of public use and can be shared with similar resources – but the right of the first publication always belongs to the Snatch team.
+        </p>
+        <p>
+            8. Snatch is open to the collaboration with any media to make data leakage situations shared and visible to wide range of people.
+        </p>
+        <p>
+            9. Snatch is always open for a dialogue with the owners of the data and is willing to solve the situation. One can always contact us within the confidential chat room or with the help of feedback form.
+        </p>
+        <p>
+            10. All negotiations are possible only with the means of our chat platform and are kept absolutely confidential.
+        </p>
+        <p>
+            11. Snatch does not assume any responsibility for the data publication consequences and confidential data usage. All the responsibility lies upon those who made the data leakage possible.
+        </p>    </div>
+</div>
+
+<div id="press_release" class="mainModal">
+    <div class="modalRelease">
+        <a href="" title="Close" class="close">X</a>
+        
+        <h2>Press release</h2>
+
+        
+        
+
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+            
